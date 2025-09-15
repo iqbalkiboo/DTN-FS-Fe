@@ -13,6 +13,8 @@ export default function UploadPage() {
     setLoading(true);
     setMessage(null);
 
+    console.log("file", file);
+
     try {
       const formData = new FormData();
       formData.append("files", file);

@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { apiFetch } from "@/lib/api";
 import {
@@ -31,7 +32,10 @@ export default function GraphPage() {
       );
       setData(res);
     } catch (err: unknown) {
-      alert("Failed to fetch graph: " + (err instanceof Error ? err.message : 'Unknown error occurred'));
+      alert(
+        "Failed to fetch graph: " +
+          (err instanceof Error ? err.message : "Unknown error occurred")
+      );
     } finally {
       setLoading(false);
     }

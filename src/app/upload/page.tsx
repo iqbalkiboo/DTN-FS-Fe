@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { apiFetch } from "@/lib/api";
 
@@ -23,7 +24,11 @@ export default function UploadPage() {
 
       setMessage(`✅ ${res.message}, Inserted: ${res.inserted}`);
     } catch (err: unknown) {
-      setMessage(`Upload failed: ${err instanceof Error ? err.message : 'Unknown error occurred'}`);
+      setMessage(
+        `Upload failed: ${
+          err instanceof Error ? err.message : "Unknown error occurred"
+        }`
+      );
     } finally {
       setLoading(false);
     }

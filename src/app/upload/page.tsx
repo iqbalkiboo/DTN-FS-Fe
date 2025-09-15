@@ -21,7 +21,7 @@ export default function UploadPage() {
         "/raw-data/upload",
         { method: "POST", body: formData }
       );
-
+      
       setMessage(`✅ ${res.message}, Inserted: ${res.inserted}`);
     } catch (err: unknown) {
       setMessage(

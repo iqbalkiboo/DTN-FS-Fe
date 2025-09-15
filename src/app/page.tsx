@@ -7,8 +7,8 @@ export default function Home() {
     <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
       <h1 className="text-3xl font-bold mb-4">Welcome</h1>
       <Card
-        title="Test Card"
-        description="Ini contoh card pakai TailwindCSS + Framer Motion."
+        title="Iqbalkiboo"
+        description="Ini Test untuk masuk ke DTN"
       />
     </main>
   );

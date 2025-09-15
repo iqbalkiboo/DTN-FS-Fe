@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
-    appDir: true,
+    appDir: false,
     allowedDevOrigins: ["192.168.1.29"],
   },
 };
